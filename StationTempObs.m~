@@ -77,7 +77,7 @@ for i = 1:12
 end
 
 %% Calculate the annual mean temperature for each year
-annualMean = mean(tempData(
+annualMean = mean(tempDat
 
 %% Calculate the temperature anomaly for each year, compared to the 1981-2000 mean
 % The anomaly is the difference from the mean over some baseline period. In
