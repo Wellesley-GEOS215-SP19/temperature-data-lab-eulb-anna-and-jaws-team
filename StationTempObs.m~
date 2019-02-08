@@ -137,10 +137,10 @@ P_1960on = polyfit(stationdata.Year(theSixties), meanTempAnomaly(theSixties), 1)
 %and P_1960on, or using the polyval function). Plot each new line in a
 %different color.
 plot(stationdata.Year, polyval(P_all, stationdata.Year))
-plot(stationdata.Year(theSixties), polyval(P_1960on, stationdata.Year(theSixties)))
+plot(stationdata.Year, polyval(P_1960on, stationdata.Year))
 
 %% Add a legend, axis labels, and a title to your temperature anomaly plot
 legend('Mean Temperature Anomaly', 'Smoothed Data', 'Line of Best Fit - All', 'Line of Best Fit - 1960 On')
 xlabel('Year')
-ylabel('Temperature Anomaly Relative to 1981-2000 Mean Temperature [°C]')
+ylabel('Temperature Anomaly Relative to 1981-2000 [°C]')
 title('Mean Temperature Anomaly - Station 70026 Barrow, AK')
